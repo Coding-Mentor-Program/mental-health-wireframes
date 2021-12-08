@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDNS / External Links -->
+    <script src="https://kit.fontawesome.com/6afe2f0c16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <!-- Internal Links -->
+    <link href="css/about.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Styling / Personal Touches -->
+    <link rel="favicon" type="image/x-icon" href="/images/favicon.ico"/>
+    <title>About Page</title>
+
+</head>
+<body>
+
+    <header>
+        <!-- <div class="app-header-content"> -->
+            <div class="logo">
+                <!-- <img src="" alt="" class="logo-img"> -->
+                <i class="fas fa-circle-notch"></i>
+            </div>
+
+            <div class="app-name">
+<!-- BeeNOTE-- Do we want to use <h1> for our App Name or use that for the page title for semantics/SSO?? Personally I never do unless there is no other content for the site and do a standard <p> or even <h2> but usually <p> with a class (and ID if needed) of "site title" or something but I'll include the <h1> just in case -->
+<!-- <h1>App Name</h1> -->
+                <p class="app-name mb0">App Name</p>
+            </div>
+
+
+<!-- BeeNote-- I have also made them in the past primarily but we can always do this. Depending on how many assets we'll be loading though might be worth consideration of creating our own bars? -->
+
+            <!-- Hamburger Menu // Navbar Toggle Button -->
+            <a href="#" id="toggle-button" class="toggle-button">
+                <i class="fa fa-bars hamburger-menu-bars"></i>
+            </a>
+
+    <!-- </div> -->
+
+        <nav>
+<!-- BeeNote-- I'm including both the signed in and not signed in navbar "assets" if that's what you'd call them? Components perhaps? Anyway, I'm also making a couple different class names too, abbreviated ones are always good but more detailed ones will keep us from getting confused/overwhelmed in the future (in my experience that is lol) -->
+
+            <!-- NOT SIGNED IN NAVBAR // NOT SIGNED IN NAVBAR LINKS -->
+            <ul id="navbar-links-ns" class="navbar-links navbar-links-not-signed-in navbar-links-ns navbar-links-not-user">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+                <li><a href="#" class="active-nav-page">About</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+            <!-- SIGNED IN NAVBAR // LOGGED IN NAVBAR LINKS -->
+            <ul id="navbar-links-si" class="navbar-links navbar-links-signed-in navbar-links-si">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Add New Entry</a></li>
+                <!-- <li><a href="#">Diary Cards</a></li> -->
+                <li><a href="#">Review Entries</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#" class="active-nav-page">About</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+            <!-- Jami's Balsamiq Navbar -->
+            <ul id="navbar-links-jami" class="navbar-links navbar-links-jami">
+                <li><a href="#">Add Entry</a></li>
+                <li><a href="#">Review Entry</a></li>
+                <li><a href="#">Share with Doctor</a></li>
+                <li><a href="#">Get Help</a></li>
+                <li><a href="#">About DBT</a></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+
+
+<div class="wrapper">
+
+   
+    <!-- Main / Hero Section -->
+    <main role="main">
+        <section class="hero">
+            <h1 class="text-center">About</h1>
+
+            <p class="hero-content text-center">
+                Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread.
+                Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaroon. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaroon apple pie tiramisu.
+            </p>
+        </section>
+    </main>
+
+
+
+
+</div> <!-- /end of .wrapper -->
+
+    <footer></footer>
+    
+</body>
+</html>
