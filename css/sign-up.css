@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  margin-bottom: 8rem;
+}
+
 .logo-placeholder {
   width: 100px;
   height: 100px;
@@ -13,11 +22,19 @@
   place-items: center;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
+h1 {
+  font-size: 4vw;
+}
+
+.fas {
+  font-size: 2rem;
+  padding: 34px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .header-container ul {
@@ -28,36 +45,55 @@
   padding: 1rem 2rem;
 }
 
+.main-container {
+  width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 100%;
+}
+
 .sign-up-main {
   width: 500px;
+  max-width: 100%;
   margin: 0 auto;
   text-align: center;
   border: solid gray;
-}
-
-.sign-up-main h2 {
-  margin-top: 1rem;
+  padding: 2rem;
 }
 
 .sign-up-main a {
   color: gray;
 }
 
+.sign-up-main p {
+  margin-bottom: 1rem;
+}
+
 .sign-up-container label,
 .sign-up-container button {
   display: block;
+  margin: 0 auto;
 }
 
 .sign-up-container input {
   display: block;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
-.sign-up-container label {
-  padding-top: 1rem;
+
+footer {
+  padding: 4rem;
+  text-align: center;
 }
 
-.sign-up-container button {
-  margin: 1rem auto;
-}
+@media (max-width: 600px) {
+  nav {
+    top: 160px;
+    width: 100%;
+  }
 
+  .header-container {
+    margin-bottom: 20rem;
+  }
+}
