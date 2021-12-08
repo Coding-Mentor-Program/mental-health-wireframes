@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #212020;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 50px 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 10px 0;
+}
+header img {
+  width: 20%;
+}
+header nav ul {
+  list-style: none;
+}
+header nav li {
+  padding: 5px;
+}
