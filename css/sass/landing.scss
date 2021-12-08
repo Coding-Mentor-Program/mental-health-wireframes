@@ -1,0 +1,23 @@
+@import 'base';
+
+header{
+    padding: 10px 0;
+
+
+  img{
+        width: 20%;
+    }
+
+  nav {
+      ul{
+        // display:flex;
+        list-style: none;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+  }
+
+}
