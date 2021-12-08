@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-placeholder {
+  width: 100px;
+  height: 100px;
+  background: gainsboro;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.header-container ul {
+  list-style: none;
+  text-align: center;
+  line-height: 2;
+  border: solid gray;
+  padding: 1rem 2rem;
+}
+
+.sign-up-main {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  border: solid gray;
+}
+
+.sign-up-main h2 {
+  margin-top: 1rem;
+}
+
+.sign-up-main a {
+  color: gray;
+}
+
+.sign-up-container label,
+.sign-up-container button {
+  display: block;
+}
+
+.sign-up-container input {
+  display: block;
+  margin: 0 auto;
+}
+
+.sign-up-container label {
+  padding-top: 1rem;
+}
+
+.sign-up-container button {
+  margin: 1rem auto;
+}
+
