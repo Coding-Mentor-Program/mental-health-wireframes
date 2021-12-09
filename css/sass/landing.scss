@@ -1,17 +1,20 @@
 @import 'base';
 
 header{
-    padding: 10px 0;
-    
+  display:flex;
+  justify-content: space-between;
+  
 
-
-  img{
-        width: 20%;
-    }
-
+   .container {
+     margin: 0;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow:row wrap;
+   }
+  
   nav {
       ul{
-        // display:flex;
         list-style: none;
     }
 
@@ -20,5 +23,26 @@ header{
     }
 
   }
-
 }
+main {
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  h2{
+    margin-bottom: 1em;
+  }
+}
+.about{
+  h3{
+    margin-top: 12px;
+  }
+}
+footer{
+  p{
+    text-align: center;
+    background-color: rgb(167, 158, 158);
+  }
+}
+@import 'loginpg';
+@import 'mediaqueries';
