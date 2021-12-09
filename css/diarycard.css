@@ -29,6 +29,7 @@ label[for="w3review"] {
 
 textarea {
   padding: 5px;
+  width: 100%;
 }
 
 button {
@@ -39,4 +40,12 @@ button {
   border-radius: 50%;
   line-height: 1;
   margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+
+  .container {
+  width: 90%;
+  }
+
 }
