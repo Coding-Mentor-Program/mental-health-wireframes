@@ -26,88 +26,92 @@
         </nav>
     </div>
     </header>
+
     <main>
         <div class="container">
-        <section class="hero">
-            <h2>Diary Card</h2>
-        </section>
-         <section class="date">
-           <form action="/diarycard.js">
-              <label for="dairyDate">Select Date:</label>
-              <input type="date" id="diaryDate" name="diaryDate">
+            <section class="hero">
+                <h2>Diary Card</h2>
+            </section>
             
-        </section>
-        <section class="dbtSkills">
-            <h3>DBT SKills</h3>
-             <p>Interpersonal Effectiveness</p>
-              <input type="radio" id="notThought" name="dbtskill_1" value="0">
-              <label for="notThought">Not thought about or used on this day</label><br>
-              <input type="radio" id="thought" name="dbtskill_1" value="thought">
-              <label for="thought">Thought about using skill on this day</label><br>
-              <input type="radio" id="thought_1" name="dbtskill_1" value="1" disabled>
-              <label for="thought_1">I didn't want to use the skill this day.</label><br>
-              <input type="radio" id="thought_2" name="dbtskill_1" value="2" disabled>
-              <label for="thought_2">I wanted to use the skill, but didn't.</label><br>
-              <input type="radio" id="tried" name="dbtskill_1" value="tried">
-              <label for="tried">Tried to use skill on this day</label><br>
-              <input type="radio" id="tried_1" name="dbtskill_1" value="3" disabled>
-              <label for="tried_1">I wanted to use the skill, but couldn't.</label><br>
-              <input type="radio" id="tried_2" name="dbtskill_1" value="4" disabled>
-              <label for="tried_2">I could use the skill, but it didn't help.</label><br>
-              <input type="radio" id="tried_3" name="dbtskill_1" value="5" disabled>
-              <label for="tried_3">I could use the skill, and it helped.</label><br>
-              <input type="radio" id="notTried" name="dbtskill_1" value="tried">
-              <label for="notTried">Used skill automatically without trying on this day</label><br>
-              <input type="radio" id="tried_2" name="dbtskill_1" value="6" disabled>
-              <label for="not_tried_1">When I used the skill it didn't help.</label><br>
-              <input type="radio" id="tried_3" name="dbtskill_1" value="7" disabled>
-              <label for="not_tried_2">When I used the skill it helped.</label><br><br>
-              
-        </section>
-        <section class="emotions">
-            <h3>Emotions</h3>
-            <p>Sadness</p>
-              <input type="radio" id="not_at_all" name="emotion_1" value="0">
-              <label for="emotion_1">Not At all</label><br>
-              <input type="radio" id="bit" name="emotion_1" value="1">
-              <label for="emotion_1">A bit</label><br>
-              <input type="radio" id="somewhat" name="emotion_1" value="2">
-              <label for="emotion_1">Somewhat</label><br>
-              <input type="radio" id="rather_strong" name="emotion_1" value="3">
-              <label for="emotion_1">Rather Strong</label><br>
-              <input type="radio" id="very_strong" name="emotion_1" value="4">
-              <label for="emotion_1">Very Strong</label><br>
-              <input type="radio" id="extremely_strong" name="emotion_1" value="5">
-              <label for="emotion_1"> Extremely Strong (rare)</label><br>
-        </section>
-        <section class="urges">
-            <h3>Urges</h3>
-            <p>Select any behaviors you felt and urge this day.</p>
-               <input type="checkbox" id="urge1" name="urge1" value="suicide_ideation">
-               <label for="urge1"> Suicidal Ideation</label><br>
-               <input type="checkbox" id="urge2" name="urge2" value="self_harm">
-               <label for="urge2"> Self Harm</label><br>
-               <input type="checkbox" id="urge3" name="urge3" value="skip_therapy">
-               <label for="urge3"> Skip Therapy or Doctor Appointments</label><br>
-               <input type="checkbox" id="urge4" name="urge4" value="lying">
-               <label for="urge4">Lying</label><br>
-               <input type="checkbox" id="urge5" name="urge5" value="alcohol">
-               <label for="urge5"> Alcohol</label><br>
-               <input type="checkbox" id="urge6" name="urge6" value="recreational_drugs">
-               <label for="urge6"> Recreational Drugs</label><br>
-               <input type="checkbox" id="urge7" name="urge7" value="prescription_drugs">
-               <label for="urge7"> Prescription Medication Off Label</label><br>
-               <input type="checkbox" id="urge8" name="urge8" value="OTC_drugs">
-               <label for="urge8"> Over-the-Counter Medication Off Label</label><br>
-        </section>
-        <section class="notes">
-            <label for="w3review">Notes about the Day:</label>
+            <section class="date">
+                <form action="/diarycard.js">
+                    <label for="dairyDate">Select Date:</label>
+                    <input type="date" id="diaryDate" name="diaryDate">
+                </form>
+            </section>
 
-            <textarea id="notes" name="notes" rows="4" cols="50">
-            Add any Notes here about the day you want to share with your doctor or treatment team.
-            </textarea>
-            </form>
-        </section>
+            <section class="dbtSkills">
+                <h3>DBT SKills</h3>
+                <p>Interpersonal Effectiveness</p>
+                <input type="radio" id="notThought" name="dbtskill_1" value="0">
+                <label for="notThought">Not thought about or used on this day</label><br>
+                <input type="radio" id="thought" name="dbtskill_1" value="thought">
+                <label for="thought">Thought about using skill on this day</label><br>
+                <input type="radio" id="thought_1" name="dbtskill_1" value="1" disabled>
+                <label for="thought_1">I didn't want to use the skill this day.</label><br>
+                <input type="radio" id="thought_2" name="dbtskill_1" value="2" disabled>
+                <label for="thought_2">I wanted to use the skill, but didn't.</label><br>
+                <input type="radio" id="tried" name="dbtskill_1" value="tried">
+                <label for="tried">Tried to use skill on this day</label><br>
+                <input type="radio" id="tried_1" name="dbtskill_1" value="3" disabled>
+                <label for="tried_1">I wanted to use the skill, but couldn't.</label><br>
+                <input type="radio" id="tried_2" name="dbtskill_1" value="4" disabled>
+                <label for="tried_2">I could use the skill, but it didn't help.</label><br>
+                <input type="radio" id="tried_3" name="dbtskill_1" value="5" disabled>
+                <label for="tried_3">I could use the skill, and it helped.</label><br>
+                <input type="radio" id="notTried" name="dbtskill_1" value="tried">
+                <label for="notTried">Used skill automatically without trying on this day</label><br>
+                <input type="radio" id="tried_2" name="dbtskill_1" value="6" disabled>
+                <label for="not_tried_1">When I used the skill it didn't help.</label><br>
+                <input type="radio" id="tried_3" name="dbtskill_1" value="7" disabled>
+                <label for="not_tried_2">When I used the skill it helped.</label><br><br>   
+            </section>
+
+            <section class="emotions">
+                <h3>Emotions</h3>
+                <p>Sadness</p>
+                <input type="radio" id="not_at_all" name="emotion_1" value="0">
+                <label for="emotion_1">Not At all</label><br>
+                <input type="radio" id="bit" name="emotion_1" value="1">
+                <label for="emotion_1">A bit</label><br>
+                <input type="radio" id="somewhat" name="emotion_1" value="2">
+                <label for="emotion_1">Somewhat</label><br>
+                <input type="radio" id="rather_strong" name="emotion_1" value="3">
+                <label for="emotion_1">Rather Strong</label><br>
+                <input type="radio" id="very_strong" name="emotion_1" value="4">
+                <label for="emotion_1">Very Strong</label><br>
+                <input type="radio" id="extremely_strong" name="emotion_1" value="5">
+                <label for="emotion_1"> Extremely Strong (rare)</label><br>
+            </section>
+            
+            <section class="urges">
+                <h3>Urges</h3>
+                <p>Select any behaviors you felt and urge this day.</p>
+                <input type="checkbox" id="urge1" name="urge1" value="suicide_ideation">
+                <label for="urge1"> Suicidal Ideation</label><br>
+                <input type="checkbox" id="urge2" name="urge2" value="self_harm">
+                <label for="urge2"> Self Harm</label><br>
+                <input type="checkbox" id="urge3" name="urge3" value="skip_therapy">
+                <label for="urge3"> Skip Therapy or Doctor Appointments</label><br>
+                <input type="checkbox" id="urge4" name="urge4" value="lying">
+                <label for="urge4">Lying</label><br>
+                <input type="checkbox" id="urge5" name="urge5" value="alcohol">
+                <label for="urge5"> Alcohol</label><br>
+                <input type="checkbox" id="urge6" name="urge6" value="recreational_drugs">
+                <label for="urge6"> Recreational Drugs</label><br>
+                <input type="checkbox" id="urge7" name="urge7" value="prescription_drugs">
+                <label for="urge7"> Prescription Medication Off Label</label><br>
+                <input type="checkbox" id="urge8" name="urge8" value="OTC_drugs">
+                <label for="urge8"> Over-the-Counter Medication Off Label</label><br>
+            </section>
+
+            <section class="notes">
+                <label for="w3review">Notes about the Day:</label>
+
+                <textarea id="notes" name="notes" rows="4" cols="50">
+                Add any Notes here about the day you want to share with your doctor or treatment team.
+                </textarea>
+            </section>
         
         
         </div>
