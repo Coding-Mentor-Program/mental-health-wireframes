@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/*--------------------------
+          HEADER
+--------------------------*/
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -29,6 +33,7 @@ h1 {
 .fas {
   font-size: 2rem;
   padding: 34px;
+  color: gray;
 }
 
 nav {
@@ -44,6 +49,10 @@ nav {
   border: solid gray;
   padding: 1rem 2rem;
 }
+
+/*--------------------------
+        MAIN/SIGN-UP
+--------------------------*/
 
 .main-container {
   width: 600px;
@@ -70,22 +79,28 @@ nav {
 }
 
 .sign-up-container label,
+.sign-up-container input,
 .sign-up-container button {
   display: block;
   margin: 0 auto;
 }
 
 .sign-up-container input {
-  display: block;
-  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
+/*--------------------------
+          FOOTER
+--------------------------*/
 
 footer {
   padding: 4rem;
   text-align: center;
 }
+
+/*--------------------------
+       MEDIA QUERIES
+--------------------------*/
 
 @media (max-width: 600px) {
   nav {
