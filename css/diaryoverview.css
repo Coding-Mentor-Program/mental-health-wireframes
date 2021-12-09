@@ -1,0 +1,54 @@
+header .container {
+  max-width: 90%;
+}
+
+.diary-lg-placeholder {
+  width: 100%;
+  height: 500px;
+  background: lightgray;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 12px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+.previous-diaries-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2rem;
+}
+
+.diary-sm-placeholder {
+  min-width: 35%;
+  height: 200px;
+  max-width: 200px;
+  background: lightgray;
+}
+
+
+@media (max-width: 1024px) {
+  
+  header .container {
+    justify-content: space-between;
+    margin: 0 auto;
+    
+  }
+}
