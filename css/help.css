@@ -1,0 +1,472 @@
+/*
+==================================================================================
+                                Table Of Contents:
+================================================================================== 
+*/
+
+/*
+    1. Element Selectors
+    2. Typography
+            i. Utility Typography Classes
+           ii. Specific Typography Classes
+    3. Layout
+            i. Utility Layout Classes
+    4. Buttons
+            i. Standard Buttons
+           ii. JavaScript Buttons
+    5. Navbar
+            i. Mobile / Hamburger
+           ii. Desktop
+          iii. Other Navbar Types
+    6. Media
+            i. Images
+           ii. Videos
+          iii. Other [Embeds, etc.]
+    7. Colors
+            i. Light
+           ii. Medium
+          iii. Dark
+         iiii. Translucent
+================================================================================== 
+8. Section Dividers Copy’n’Paste at file /end
+================================================================================== 
+*/ 
+
+
+
+/* 
+=======================
+1. Element Selectors
+=======================
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p
+ {
+    margin-top: 0;
+}
+
+h2,
+h3 {
+    margin-bottom: 0;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    align-items: center;
+}
+
+footer {
+    padding: 1em 0;
+    color: #fff;
+    background: #252525;
+    text-align: center;
+    font-size: .8rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.tab-num {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
+
+/* 
+=================
+DEBUG
+================= 
+*/
+
+section {
+    border: 1px solid black;
+    margin: 2em 0;
+}
+
+.section-wrapper {
+    border: 1px dotted blue;
+}
+
+article {
+    border: 2px dotted pink;
+    margin: 1em auto;
+    max-width: 700px;
+}
+
+
+
+
+
+
+/* 
+=================
+2. Typography 
+================= 
+*/
+
+/* ------------ Utility Typography Classes -------------- */
+
+.text-center {
+    text-align: center;
+}
+
+/* ------------ Specific Typography Classes ------------- */
+
+.article-header {
+    background: #ababab;
+    color: #252525;
+}
+
+/* padding for all p in 2 column article section */
+.how-tos-article .col2-article p {
+    padding: 1em;
+}
+
+/* article header banner  */
+.how-tos-article .col2-article h3 {
+    margin: 0 .5em;
+    padding: .5em;
+    color: #252525;
+}
+
+/* beeNote-- This is also an option for the accent borders in the headers and is easier I just did it this way to make it look the most like the wireframe but is probably a bad idea as it will take longer to load though I've read studies that say it isn't much */
+/* .section-header-wrapper {
+    border-top: 3px solid rgb(121, 119, 119);
+    border-bottom: 3px solid rgb(121, 119, 119); 
+} */
+
+
+
+/* 
+=================
+3. Layout
+================= 
+*/
+
+/* ----------- Utility Layout Classes--------------- */
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mt0 {
+    margin-top: 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.margin-center {
+    margin: 0 auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: space-evenly;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.article-padding {
+    margin: 1em .5em;
+}
+
+
+
+/* ----------- Specific Layout Classes -----------  */
+
+
+
+.section-header-wrapper img {
+    margin: 0 auto;
+}
+
+.section-header-wrapper h2,
+.section-header-wrapper h3 {
+    text-align: center;
+}
+
+.section-header-wrapper h2 {
+    font-size: 2.5rem;
+}
+
+.section-header-wrapper h3 {
+    font-size: .6rem;
+}
+
+.col2-article {
+    margin: 1em .5em;
+}
+
+.article-ol {
+    margin: 1em .5em;
+}
+
+
+
+
+
+
+
+
+
+/* 
+=================
+4. Buttons
+================= 
+*/
+
+/* ----------- Utility Button Classes --------------- */
+/* ----------- Specific Button Classes -----------  */
+
+
+
+
+
+
+/* 
+=================
+5. Navbar
+================= 
+*/
+
+/* trying to get app name centered relative to about heading lol */
+.app-name {
+    margin-right: 1em;
+}
+
+.active-nav-page {
+    border-bottom: 1px solid #252525;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    padding: .25em .25em .20em .25em;
+    color: black;
+    background: gray;
+}
+
+
+
+/* ----------- Mobile View Menu --------------- */
+
+
+/* ---- DEFAULT- Not Signed In  ---- */
+.navbar-links-ns {
+    list-style: none;
+    display: none;
+}
+/* ---- Signed In Navbar ---- */
+.navbar-links-si {
+    display: none;
+}
+/* ---- Jami's Balsamiq Navbar ---- */
+.navbar-links-jami {
+    display: none;
+}
+
+
+
+
+/* ----------- Desktop View Menu --------------- */
+/* ----------- OTHER Navbar Types ------------ */
+/* ---- Social Media Menu ---- */
+
+
+
+
+
+/* 
+===================
+6. Media
+=================== 
+*/
+
+/* ----------- Images --------------- */
+
+.logo-img {
+    width: auto;
+    height: 75px;
+    margin-left: 25%;
+}
+
+/* ----------- Videos -----------  */
+/* ----------- Other [Embeds etc] -----------  */
+
+
+
+
+
+/* 
+=================
+7. Colors
+================= 
+*/
+
+
+/* ----------- Accents -----------  */
+/* ----------- Translucent -----------  */
+/* ----------- Light --------------- */
+/* ----------- Medium -----------  */
+/* ----------- Dark -----------  */
+
+
+
+
+
+
+
+/* 
+=======================
+Section Dividers Copy’n’Paste
+(Or Click’n’Drag :)
+======================= 
+*/
+
+/* ------------ preSub-Dividers / Note / Type ------------ */
+
+/* --  -- */
+/* --  -- */
+/* --  -- */
+/* --  -- */
+/* --  -- */
+/* --  -- */
+
+
+
+/* ------------ Sub-Dividers / Specific Type / Media Queries ------------ */
+
+/* ----  ---- */
+/* ----  ---- */
+/* ----  ---- */
+/* ----  ---- */
+/* ----  ---- */
+/* ----  ---- */
+
+
+
+
+/* ------------ General Section Dividers / Table of Contents Sub-Category ------------ */
+
+/* ------------  ------------ */
+/* ------------  ------------ */
+/* ------------  ------------ */
+/* ------------  ------------ */
+/* ------------  ------------ */
+/* ------------  ------------ */
+/* ------------  ------------ */
+/* ------------  ------------ */
+
+
+
+
+
+/* ------------ Block / Full / New Section Dividers ------------ */
+
+/* 
+=================
+================= 
+*/
+
+/* 
+=================
+================= 
+*/
+
+/* 
+=================
+================= 
+*/
+
+/* 
+=================
+================= 
+*/
+
+
+
+
+/* ------------ BIG Block Dividers ------------ */
+
+/* -- Medium -- */
+
+/* 
+=====================================
+=====================================
+*/
+
+/* 
+=====================================
+=====================================
+*/
+
+/* 
+=====================================
+=====================================
+*/
+
+/* 
+=====================================
+=====================================
+*/
+
+
+
+/* -- Large -- */
+
+/* 
+==================================================================================
+==================================================================================
+*/
+
+/* 
+==================================================================================
+==================================================================================
+*/
+
+/* 
+==================================================================================
+==================================================================================
+*/
+
+
+
