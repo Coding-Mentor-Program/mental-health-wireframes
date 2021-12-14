@@ -154,7 +154,7 @@ button {
 
 }
 
-/* Example of DBT SKills with dropdown options: */
+/* Example of DBT SKills with dropdown options & Urges with dropdown: */
 
 .dbtSkillLabel {
   display: block;
@@ -162,3 +162,30 @@ button {
   text-align: center;
   font-size: 20px;
 }
+
+.urges-table td:nth-child(2) label {
+  text-align: left;
+}
+
+.urges-table td:nth-child(2) {
+  width: 40%;
+}
+
+.urges-table select {
+  width: 70%;
+  display: block;  
+  margin: 0 auto;
+  margin-bottom: 10px;
+  
+}
+
+td[colspan="3"] {
+  padding: 0;
+  margin: 0;
+}
+
+.urges p {
+  font-size: 1rem;
+  text-align: center;
+}
+

@@ -179,31 +179,31 @@
                     <tbody>
                         <tr>
                             <td><label for="sadness">Sadness</label></td>
-                            <td><input type="range" step="6" value="0" id="sadness"></td>
+                            <td><input type="range" max="6" value="0" id="sadness"></td>
                         </tr>
                         <tr>
                             <td><label for="guilt">Guilt</label></td>
-                            <td><input type="range" step="6" value="0" id="guilt"></td>
+                            <td><input type="range" max="6" value="0" id="guilt"></td>
                         </tr>
                         <tr>
                             <td><label for="shame">Shame</label></td>
-                            <td><input type="range" step="6" value="0" id="shame"></td>
+                            <td><input type="range" max="6" value="0" id="shame"></td>
                         </tr>
                         <tr>
                             <td><label for="anger">Anger</label></td>
-                            <td><input type="range" step="6" value="0" id="anger"></td>
+                            <td><input type="range" max="6" value="0" id="anger"></td>
                         </tr>
                         <tr>
                             <td><label for="fear">Fear</label></td>
-                            <td><input type="range" step="6" value="0" id="fear"></td>
+                            <td><input type="range" max="6" value="0" id="fear"></td>
                         </tr>
                         <tr>
                             <td><label for="anxiety">Anxiety</label></td>
-                            <td><input type="range" step="6" value="0" id="anxiety"></td>
+                            <td><input type="range" max="6" value="0" id="anxiety"></td>
                         </tr>
                         <tr>
                             <td><label for="joy">Joy</label></td>
-                            <td><input type="range" step="6" value="0" id="joy"></td>
+                            <td><input type="range" max="6" value="0" id="joy"></td>
                         </tr>
                     </tbody>
                 </table>
@@ -212,11 +212,130 @@
             <section class="urges">
                 <h3>Urges</h3>
                 <p>Select any behaviors you felt this day.</p>
-                <input type="checkbox" id="urge1" name="urge1" value="suicide_ideation"> <input type="range" step="6" id="urge1_intensity">
+
+                <table class="urges-table">
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="suicidal" name="suicidal" value="suicidal"></td>
+                            <td><label for="suicidal">Suicidal Ideation</label></td>
+                            <td><input type="range" max="6" value="0" id="sadness"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="urge_engaged" id="urge_engaged" disabled>
+                                    <option value="quickly_stopped" class="urges_option">Engaged in behavior and quickly stopped.</option>
+                                    <option value="engaged_longer">Engaged in behavior for a longer period of time and implemented skills to interrupt engagement</option>
+                                    <option value="recieved_support">Engaged in behavior for a longer period of time and received support to implement skills.</option>
+                                    <option value="did_not_seek_help">Engaged in behavior and did not seek support or implement skills.</option>
+                                    <option value="relapse_likely">"I am likely in relapse": Engaged in a behavior for a long period of time without relief and did not seek support.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="guilt" name="guilt" value="guilt"></td>
+                            <td><label for="guilt">Guilt</label></td>
+                            <td><input type="range" max="6" value="0" id="guilt"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="urge_engaged" id="urge_engaged" disabled>
+                                    <option value="quickly_stopped" class="urges_option">Engaged in behavior and quickly stopped.</option>
+                                    <option value="engaged_longer">Engaged in behavior for a longer period of time and implemented skills to interrupt engagement</option>
+                                    <option value="recieved_support">Engaged in behavior for a longer period of time and received support to implement skills.</option>
+                                    <option value="did_not_seek_help">Engaged in behavior and did not seek support or implement skills.</option>
+                                    <option value="relapse_likely">"I am likely in relapse": Engaged in a behavior for a long period of time without relief and did not seek support.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="shame" name="shame" value="shame"></td>
+                            <td><label for="shame">Shame</label></td>
+                            <td><input type="range" max="6" value="0" id="shame"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="urge_engaged" id="urge_engaged" disabled>
+                                    <option value="quickly_stopped" class="urges_option">Engaged in behavior and quickly stopped.</option>
+                                    <option value="engaged_longer">Engaged in behavior for a longer period of time and implemented skills to interrupt engagement</option>
+                                    <option value="recieved_support">Engaged in behavior for a longer period of time and received support to implement skills.</option>
+                                    <option value="did_not_seek_help">Engaged in behavior and did not seek support or implement skills.</option>
+                                    <option value="relapse_likely">"I am likely in relapse": Engaged in a behavior for a long period of time without relief and did not seek support.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="anger" name="anger" value="anger"></td>
+                            <td><label for="anger">Anger</label></td>
+                            <td><input type="range" max="6" value="0" id="anger"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="urge_engaged" id="urge_engaged" disabled>
+                                    <option value="quickly_stopped" class="urges_option">Engaged in behavior and quickly stopped.</option>
+                                    <option value="engaged_longer">Engaged in behavior for a longer period of time and implemented skills to interrupt engagement</option>
+                                    <option value="recieved_support">Engaged in behavior for a longer period of time and received support to implement skills.</option>
+                                    <option value="did_not_seek_help">Engaged in behavior and did not seek support or implement skills.</option>
+                                    <option value="relapse_likely">"I am likely in relapse": Engaged in a behavior for a long period of time without relief and did not seek support.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="fear" name="fear" value="fear"></td>
+                            <td><label for="fear">Fear</label></td>
+                            <td><input type="range" max="6" value="0" id="fear"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="urge_engaged" id="urge_engaged" disabled>
+                                    <option value="quickly_stopped" class="urges_option">Engaged in behavior and quickly stopped.</option>
+                                    <option value="engaged_longer">Engaged in behavior for a longer period of time and implemented skills to interrupt engagement</option>
+                                    <option value="recieved_support">Engaged in behavior for a longer period of time and received support to implement skills.</option>
+                                    <option value="did_not_seek_help">Engaged in behavior and did not seek support or implement skills.</option>
+                                    <option value="relapse_likely">"I am likely in relapse": Engaged in a behavior for a long period of time without relief and did not seek support.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="anxiety" name="anxiet" value="anxiety"></td>
+                            <td><label for="anxiety">Anxiety</label></td>
+                            <td><input type="range" max="6" value="0" id="anxiety"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="urge_engaged" id="urge_engaged" disabled>
+                                    <option value="quickly_stopped" class="urges_option">Engaged in behavior and quickly stopped.</option>
+                                    <option value="engaged_longer">Engaged in behavior for a longer period of time and implemented skills to interrupt engagement</option>
+                                    <option value="recieved_support">Engaged in behavior for a longer period of time and received support to implement skills.</option>
+                                    <option value="did_not_seek_help">Engaged in behavior and did not seek support or implement skills.</option>
+                                    <option value="relapse_likely">"I am likely in relapse": Engaged in a behavior for a long period of time without relief and did not seek support.</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="joy" name="joy" value="joy"></td>
+                            <td><label for="joy">Joy</label></td>
+                            <td><input type="range" max="6" value="0" id="joy"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <select name="urge_engaged" id="urge_engaged" disabled>
+                                    <option value="quickly_stopped" class="urges_option">Engaged in behavior and quickly stopped.</option>
+                                    <option value="engaged_longer">Engaged in behavior for a longer period of time and implemented skills to interrupt engagement</option>
+                                    <option value="recieved_support">Engaged in behavior for a longer period of time and received support to implement skills.</option>
+                                    <option value="did_not_seek_help">Engaged in behavior and did not seek support or implement skills.</option>
+                                    <option value="relapse_likely">"I am likely in relapse": Engaged in a behavior for a long period of time without relief and did not seek support.</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Jami's markup: 
+                <input type="checkbox" id="urge1" name="urge1" value="suicide_ideation"> <input type="range" max="6" id="urge1_intensity">
                 <label for="urge1"> Suicidal Ideation</label><br>
-                <input type="checkbox" id="urge2" name="urge2" value="self_harm"> <input type="range" step="6" id="urge2_intensity" disabled>
+                <input type="checkbox" id="urge2" name="urge2" value="self_harm"> <input type="range" max="6" id="urge2_intensity" disabled>
                 <label for="urge2"> Self Harm</label><br>
-                <input type="checkbox" id="urge3" name="urge3" value="skip_therapy"><input type="range" step="6" id="urge3_intensity" disabled>
+                <input type="checkbox" id="urge3" name="urge3" value="skip_therapy"><input type="range" max="6" id="urge3_intensity" disabled>
                 <label for="urge3"> Skip Therapy or Doctor Appointments</label><br>
                 <input type="checkbox" id="urge4" name="urge4" value="lying">
                 <label for="urge4">Lying</label><br>
@@ -227,7 +346,7 @@
                 <input type="checkbox" id="urge7" name="urge7" value="prescription_drugs">
                 <label for="urge7"> Prescription Medication Off Label</label><br>
                 <input type="checkbox" id="urge8" name="urge8" value="OTC_drugs">
-                <label for="urge8"> Over-the-Counter Medication Off Label</label><br>
+                <label for="urge8"> Over-the-Counter Medication Off Label</label><br> -->
                 
             </section>
 
