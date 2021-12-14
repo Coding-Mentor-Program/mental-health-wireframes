@@ -44,7 +44,62 @@
         
         <div class="new-entry-container">
             <section class="dbtSkills">
-                <h3>DBT SKills</h3>
+                <h3>DBT Skills</h3>
+
+                <label for="skill1" class="dbtSkillLabel">Interpersonal Effectiveness</label>
+                <select name="skill1" id="skill1">
+                    <option value="notThought">Not thought about or used on this day.</option>
+                    <optgroup label="Thought about using skill on this day:">
+                        <option value="thought_1">I didn't want to use the skill this day.</option>
+                        <option value="thought_2">I wanted to use the skiill, but didn't.</option>
+                    </optgroup>
+                    <optgroup label="Tried to use skill on this day:">
+                        <option value="tried_1">I wanted to use the skill, but couldn't.</option>
+                        <option value="tried_2">I could use the skill, but it didn't help.</option>
+                        <option value="tried_3">I could use the skill, and it helped.</option>
+                    </optgroup>
+                    <optgroup label="Used skill automatically without trying on this day:">
+                        <option value="automatic_1">When I used the skill it didn't help.</option>
+                        <option value="automatic_2">When I used the skill it helped.</option>
+                    </optgroup>
+                </select>
+                <label for="skill2" class="dbtSkillLabel">Opposite Action</label>
+                <select name="skill2" id="skill2">
+                    <option value="notThought">Not thought about or used on this day.</option>
+                    <optgroup label="Thought about using skill on this day:">
+                        <option value="thought_1">I didn't want to use the skill this day.</option>
+                        <option value="thought_2">I wanted to use the skiill, but didn't.</option>
+                    </optgroup>
+                    <optgroup label="Tried to use skill on this day:">
+                        <option value="tried_1">I wanted to use the skill, but couldn't.</option>
+                        <option value="tried_2">I could use the skill, but it didn't help.</option>
+                        <option value="tried_3">I could use the skill, and it helped.</option>
+                    </optgroup>
+                    <optgroup label="Used skill automatically without trying on this day:">
+                        <option value="automatic_1">When I used the skill it didn't help.</option>
+                        <option value="automatic_2">When I used the skill it helped.</option>
+                    </optgroup>
+                </select>
+
+                <label for="skill3" class="dbtSkillLabel">Half-smile & Willing Hands</label>
+                <select name="skill3" id="skill3">
+                    <option value="notThought">Not thought about or used on this day.</option>
+                    <optgroup label="Thought about using skill on this day:">
+                        <option value="thought_1">I didn't want to use the skill this day.</option>
+                        <option value="thought_2">I wanted to use the skiill, but didn't.</option>
+                    </optgroup>
+                    <optgroup label="Tried to use skill on this day:">
+                        <option value="tried_1">I wanted to use the skill, but couldn't.</option>
+                        <option value="tried_2">I could use the skill, but it didn't help.</option>
+                        <option value="tried_3">I could use the skill, and it helped.</option>
+                    </optgroup>
+                    <optgroup label="Used skill automatically without trying on this day:">
+                        <option value="automatic_1">When I used the skill it didn't help.</option>
+                        <option value="automatic_2">When I used the skill it helped.</option>
+                    </optgroup>
+                </select>
+
+                <!-- Jami's code:
                 <p>Interpersonal Effectiveness</p>
                 <input type="radio" id="notThought" name="dbtskill_1" value="0">
                 <label for="notThought">Not thought about or used on this day</label><br>
@@ -93,7 +148,6 @@
                 <input type="radio" id="tried_3" name="dbtskill_2" value="7" disabled>
                 <label for="not_tried_2">When I used the skill it helped.</label><br>  
                 
-                
                 <p>Half-smile & Willing Hands</p>
                 <input type="radio" id="notThought" name="dbtskill_3" value="0">
                 <label for="notThought">Not thought about or used on this day</label><br>
@@ -116,22 +170,11 @@
                 <input type="radio" id="tried_2" name="dbtskill_3" value="6" disabled>
                 <label for="not_tried_1">When I used the skill it didn't help.</label><br>
                 <input type="radio" id="tried_3" name="dbtskill_3" value="7" disabled>
-                <label for="not_tried_2">When I used the skill it helped.</label><br>  
+                <label for="not_tried_2">When I used the skill it helped.</label><br>   -->
             </section>
 
             <section class="emotions">
                 <h3>Emotions</h3>
-                <!-- <div class="emotions-container">
-                    <div class="emotions-item">
-                        <label>Sadness</label>
-                        <input type="range" step="6" value="0">
-                    </div>
-                    <div class="emotions-item">
-                        <label>Guilt</label>
-                        <input type="range" step="6" value="0">
-                    </div>
-                  
-                </div> -->
                 <table>
                     <tbody>
                         <tr>
@@ -164,30 +207,6 @@
                         </tr>
                     </tbody>
                 </table>
-                
-
-
-                <!-- Depression
-                Guilt
-                Shame
-                Anger
-                Fear
-                Anxiety
-                Joy -->
-
-
-                <!-- <input type="radio" id="not_at_all" name="emotion_1" value="0">
-                <label for="emotion_1">Not At all</label><br>
-                <input type="radio" id="bit" name="emotion_1" value="1">
-                <label for="emotion_1">A bit</label><br>
-                <input type="radio" id="somewhat" name="emotion_1" value="2">
-                <label for="emotion_1">Somewhat</label><br>
-                <input type="radio" id="rather_strong" name="emotion_1" value="3">
-                <label for="emotion_1">Rather Strong</label><br>
-                <input type="radio" id="very_strong" name="emotion_1" value="4">
-                <label for="emotion_1">Very Strong</label><br>
-                <input type="radio" id="extremely_strong" name="emotion_1" value="5">
-                <label for="emotion_1"> Extremely Strong (rare)</label><br> -->
             </section>
             
             <section class="urges">
