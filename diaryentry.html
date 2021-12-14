@@ -67,13 +67,67 @@
                 <input type="radio" id="tried_2" name="dbtskill_1" value="6" disabled>
                 <label for="not_tried_1">When I used the skill it didn't help.</label><br>
                 <input type="radio" id="tried_3" name="dbtskill_1" value="7" disabled>
-                <label for="not_tried_2">When I used the skill it helped.</label><br><br>   
+                <label for="not_tried_2">When I used the skill it helped.</label><br>  
             </section>
 
             <section class="emotions">
                 <h3>Emotions</h3>
-                <p>Sadness</p>
-                <input type="radio" id="not_at_all" name="emotion_1" value="0">
+                <!-- <div class="emotions-container">
+                    <div class="emotions-item">
+                        <label>Sadness</label>
+                        <input type="range" step="10">
+                    </div>
+                    <div class="emotions-item">
+                        <label>Guilt</label>
+                        <input type="range" step="10">
+                    </div>
+                  
+                </div> -->
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="sadness">Sadness</label></td>
+                            <td><input type="range" step="10" id="sadness"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="guilt">Guilt</label></td>
+                            <td><input type="range" step="10" id="guilt"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="shame">Shame</label></td>
+                            <td><input type="range" step="10" id="shame"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="anger">Anger</label></td>
+                            <td><input type="range" step="10" id="anger"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fear">Fear</label></td>
+                            <td><input type="range" step="10" id="fear"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="anxiety">Anxiety</label></td>
+                            <td><input type="range" step="10" id="anxiety"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="joy">Joy</label></td>
+                            <td><input type="range" step="10" id="joy"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+
+
+                <!-- Depression
+                Guilt
+                Shame
+                Anger
+                Fear
+                Anxiety
+                Joy -->
+
+
+                <!-- <input type="radio" id="not_at_all" name="emotion_1" value="0">
                 <label for="emotion_1">Not At all</label><br>
                 <input type="radio" id="bit" name="emotion_1" value="1">
                 <label for="emotion_1">A bit</label><br>
@@ -84,7 +138,7 @@
                 <input type="radio" id="very_strong" name="emotion_1" value="4">
                 <label for="emotion_1">Very Strong</label><br>
                 <input type="radio" id="extremely_strong" name="emotion_1" value="5">
-                <label for="emotion_1"> Extremely Strong (rare)</label><br>
+                <label for="emotion_1"> Extremely Strong (rare)</label><br> -->
             </section>
             
             <section class="urges">
@@ -109,7 +163,7 @@
             </section>
 
             <section class="notes">
-                <label for="w3review">Notes about the Day:</label>
+                <label for="w3review"><h3>Notes about the Day:</h3></label>
 
                 <textarea id="notes" name="notes" rows="10" placeholder="Add any Notes here about the day you want to share with your doctor or treatment team."></textarea>
             </section>
