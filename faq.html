@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDNS / External Links -->
+    <script src="https://kit.fontawesome.com/6afe2f0c16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <!-- Internal Links -->
+    <link href="css/faq.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Styling / Personal Touches -->
+    <link rel="favicon" type="image/x-icon" href="/images/favicon.ico"/>
+    <title>FAQs Page</title>
+</head>
+<body>
+
+
+    <header>
+        <!-- <div class="app-header-content"> -->
+            <div class="logo">
+                <img src="/images/logo.png" alt="App Logo" class="logo-img">
+                <!-- <i class="fas fa-circle-notch"></i> -->
+            </div>
+
+            <div class="app-name mb0">
+<!-- BeeNOTE-- Do we want to use <h1> for our App Name or use that for the page title for semantics/SSO?? Personally I never do unless there is no other content for the site and do a standard <p> or even <h2> but usually <p> with a class (and ID if needed) of "site title" or something but I'll include the <h1> just in case -->
+<!-- <h1>App Name</h1> -->
+                <p class="app-name mb0 mt0">App Name</p>
+            </div>
+
+
+<!-- BeeNote-- for the hamburger menu bars I've made them in myself in the past but not just load them in. Always an option to slightly lower load time if needed -->
+
+            <!-- Hamburger Menu // Navbar Toggle Button -->
+            <a href="#" id="toggle-button" class="toggle-button">
+                <i class="fa fa-bars hamburger-menu-bars"></i>
+            </a>
+
+    <!-- </div> -->
+
+        <nav>
+<!-- BeeNote-- I'm including both the signed in and not signed in navbar "assets" if that's what you'd call them? Components perhaps? Anyway, I'm also making a couple different class names too, abbreviated ones are always good but more detailed ones will keep us from getting confused/overwhelmed in the future (in my experience that is lol) -->
+
+            <!-- NOT SIGNED IN NAVBAR // NOT SIGNED IN NAVBAR LINKS -->
+            <ul id="navbar-links-ns" class="navbar-links navbar-links-not-signed-in navbar-links-ns navbar-links-not-user">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#" class="active-nav-page">Help</a></li>
+            </ul>
+
+            <!-- SIGNED IN NAVBAR // LOGGED IN NAVBAR LINKS -->
+            <ul id="navbar-links-si" class="navbar-links navbar-links-signed-in navbar-links-si">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Add New Entry</a></li>
+                <!-- <li><a href="#">Diary Cards</a></li> -->
+                <li><a href="#">Review Entries</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#" class="active-nav-page">Help</a></li>
+            </ul>
+
+            <!-- Jami's Balsamiq Navbar -->
+            <ul id="navbar-links-jami" class="navbar-links navbar-links-jami">
+                <li><a href="#">Add Entry</a></li>
+                <li><a href="#">Review Entry</a></li>
+                <li><a href="#">Share with Doctor</a></li>
+                <li><a href="#" class="active-nav-page">Get Help</a></li>
+                <li><a href="#">About DBT</a></li>
+            </ul>
+        </nav>
+
+
+
+    </header>
+
+
+<div class="wrapper">
+
+        <!-- Main / Hero Section -->
+        <main role="main">
+            <section class="hero margin-center">
+                <h1 class="text-center mb0">FAQs</h1>
+                <img class="margin-center" src="images/line-accent-placeholder.png" alt="Figma Line Accent Placeholder Image">
+                <h2 class="small-h2">(frequently asked questions)</h3>
+                
+                <img class="margin-center" src="images/accent-rectangle.png" alt="Figma Line Accent Placeholder Image">
+
+
+
+
+
+                <div class="quick-navbar">
+                    <h2 class="quick-navbar-title">Quick Nav</h2>
+                    <ul class="quick-navbar-ul">
+                        <li class="quick-navbar-li"><a href="#questions">Questions</a></li>
+                        <li class="quick-navbar-li"><a href="#ask">Ask</a></li>
+                        <li class="quick-navbar-li"><a href="#answers">Answers</a></li>
+                    </ul>
+                </div>
+
+
+
+            </section> <!-- /end Hero Section -->
+        </main> <!-- /end Main (duh lol) -->
+
+
+
+        <section id="questions" class="section-questions">
+            <div class="section-wrapper">
+            <div class="section-header-wrapper">
+            <!-- <h2 class="section-header">Questions</h2> -->
+            <!-- <h3 class="section-sub-header">(section subheading elaboration)</h3> -->
+            </div> <!-- /end .section-header-wrapper -->
+
+            <!-- scroll box start -->
+            <div class="scroll-box">
+                <div class="scroll-box-content-wrapper">
+   
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+                    <div class="faq-question">
+                        <a class="scroll-box-content scroll-box-faq-question" href="#" target="_blank">Question prompt will go here. It will open a new page to the answer section in the FAQ section.</a>
+                    </div> <!-- /end .faq-question div -->
+
+
+
+
+                </div> <!-- /end .scroll-box-content-wrapper -->
+            </div> <!-- /end .scroll-box -->
+        </section> <!-- /end Question Section -->
+
+            
+
+
+        <section id="ask" class="section-contact">
+            <div class="section-wrapper">
+                <div class="section-header-wrapper">
+                    <h2 class="section-header">Ask a Question</h2>
+                    <img class="margin-center" src="images/accent-rectangle.png" alt="Figma Line Accent Placeholder Image">
+
+
+                <h3 class="section-content-title text-center">Don't see your question? <br> We'd love to answer it for you...<em>AND</em> the community!</h3>
+
+                <form class="ask-form" action="" method="">
+
+                    <ul class="form-ul ask-form-ul">
+                        <li class="form-li ask-form-li">
+                            <label for="contact-name">Name:</label>
+                            <input type="text" id="ask-name" name="ask-name" required placeholder="your name">
+                        </li>
+                        <li class="form-li ask-form-li">
+                            <label for="ask-email">Email:</label>
+                            <input type="text" id="ask-email" name="ask-email" required placeholder="your email">
+                        </li>
+                        
+                        <li class="form-li ask-form-li ask-form-textarea">
+                            <label for="ask-message">Message:</label>
+                            <textarea id="ask-message" name="ask-message" placeholder="ask your question here..." required></textarea>
+                        </li>
+
+                        <li class="form-button ask-form-button">
+                            <button class="ask-submit-button" type="submit">Ask your Question!</button>
+                          </li>
+                    </ul>      
+
+                </form>
+
+
+                
+
+
+            </div> <!-- /end .section-wrapper -->
+        </section> <!-- /end contact-us section -->
+
+
+
+        <!-- Answers Section Start -->
+        <section id="answers" class="section-answers">
+            <div class="section-wrapper">
+            <h2 class="section-header">FAQs Answers</h2>
+            <img class="margin-center" src="images/accent-rectangle.png" alt="Figma Line Accent Placeholder Image">
+
+
+        <!--   -->
+        <article class="article-section answers-article">
+            <div class="article">
+                <div class="content-wrapper">
+                    <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+
+                    <h4 class="answers-sub-heading mb0">Answer will go here:</h4>
+                    <p class="">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu.</p>
+
+                </div> <!-- /end .content-wrapper -->
+            </div> <!-- /end .article -->
+        </article> <!-- /end -->
+
+
+        <img class="margin-center" src="images/faq-page/faq-thin-accent-line.png" alt="Figma Line Accent Placeholder Image">
+
+        <!--   -->
+        <article class="article-section answers-article">
+            <div class="article">
+                <div class="content-wrapper">
+                    <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+
+                    <h4 class="answers-sub-heading mb0">Answer will go here:</h4>
+                    <p class="">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu.</p>
+
+                    <img class="margin-center" src="images/help-page/help-half-screenshot-placeholder.png" alt="Figma Line Accent Placeholder Image">
+
+                </div> <!-- /end .content-wrapper -->
+            </div> <!-- /end .article -->
+        </article> <!-- /end -->
+
+
+        <img class="margin-center" src="images/faq-page/faq-thin-accent-line.png" alt="Figma Line Accent Placeholder Image">
+
+        <!--   -->
+        <article class="article-section help-article answers-article">
+            <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+                <div class="article display-flex justify-content article-ol">
+                    
+                    <ol>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                            <ol type="a">
+                                <li>bibendum enim facilisis gravida neque</li>
+                            </ol>
+                        <li>Lorem Ipsum</li>
+                    </ol>
+
+                    <img class="" src="images/help-page/help-screenshot-placeholder.png" alt="Figma Photo Placeholder">
+                </div>
+                <p class="article-padding">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaroon. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaroon apple pie tiramisu.</p>
+        </article> <!-- /end -->
+
+
+        <img class="margin-center" src="images/faq-page/faq-thin-accent-line.png" alt="Figma Line Accent Placeholder Image">
+
+
+
+        <!--   -->
+        <article class="article-section answers-article margin-center">
+            <div class="article">
+                <div class="content-wrapper">
+                    <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+
+                    <h4 class="answers-sub-heading mb0">Answer will go here:</h4>
+                    <p class="">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu.</p>
+
+                    <img class="margin-center" src="images/help-page/help-half-screenshot-placeholder.png" alt="Figma Line Accent Placeholder Image">
+
+                </div> <!-- /end .content-wrapper -->
+            </div> <!-- /end .article -->
+        </article> <!-- /end -->
+
+
+        <img class="margin-center" src="images/faq-page/faq-thin-accent-line.png" alt="Figma Line Accent Placeholder Image">
+
+
+        <!-- Big GUY  -->
+        <article class="article-section answers-article">
+            <div class="article">
+                <div class="content-wrapper">
+                    <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+
+                    <div class="display-flex">
+                    <div class="content-block">
+                    <h4 class="answers-sub-heading mb0">Answer will go here:</h4>
+                    <p class="">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu. Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu.</p>
+                    </div>
+
+                    <img class="screenshot-ref" src="images/faq/faq-long-screenshot-placeholder.png" alt="Figma Line Accent Placeholder Image">
+                    </div>
+
+                    <ol class="answers-ol">
+                        <li class="answers-li">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. 
+                        </li>
+                        <li class="answers-li">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. 
+                        </li>
+                        <li class="answers-li">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. 
+                        </li>
+                            <ol class="answers-ol-sub" type="i">
+                                <li class="answers-li answers-li-sub">Chocolate sesame snaps jujubes chocolate bar apple pie pudding.</li>
+                                <li class="answers-li answers-li-sub">Chocolate cake chocolate bar wafer soufflé jujubes</li>
+                            </ol>
+                        <li class="answers-li">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding.</li>
+                    </ol>
+
+
+
+                    <div class="display-flex ">
+                        <p class="">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu.</p>
+
+                        <img class="screenshot-ref" src="images/faq/faq-screenshot-references-here-placeholder.png" alt="Figma Line Accent Placeholder Image">
+                    </div>
+
+
+
+
+                </div> <!-- /end .content-wrapper -->
+            </div> <!-- /end .article -->
+        </article> <!-- /end -->
+
+
+        <img class="margin-center" src="images/faq-page/faq-thin-accent-line.png" alt="Figma Line Accent Placeholder Image">
+
+
+        <!--   -->
+        <article class="article-section answers-article margin-center">
+            <div class="article">
+                <div class="content-wrapper">
+                    <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+
+                    <h4 class="answers-sub-heading mb0">Answer will go here:</h4>
+                    <p class="">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu.</p>
+
+                    <img class="margin-center" src="images/help-page/help-half-screenshot-placeholder.png" alt="Figma Line Accent Placeholder Image">
+
+                </div> <!-- /end .content-wrapper -->
+            </div> <!-- /end .article -->
+        </article> <!-- /end -->
+
+
+
+        <img class="margin-center" src="images/faq-page/faq-thin-accent-line.png" alt="Figma Line Accent Placeholder Image">
+
+
+        <!--   -->
+        <article class="article-section help-article answers-article">
+            <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+                <div class="article display-flex justify-content article-ol">
+                    
+                    <ol>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum</li>
+                            <ol type="a">
+                                <li>bibendum enim facilisis gravida neque</li>
+                            </ol>
+                        <li>Lorem Ipsum</li>
+                    </ol>
+
+                    <img class="" src="images/help-page/help-screenshot-placeholder.png" alt="Figma Photo Placeholder">
+                </div>
+                <p class="article-padding">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaroon. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaroon apple pie tiramisu.</p>
+        </article> <!-- /end -->
+
+
+        <img class="margin-center" src="images/faq-page/faq-thin-accent-line.png" alt="Figma Line Accent Placeholder Image">
+
+
+        <!--   -->
+        <article class="article-section answers-article margin-center">
+            <div class="article">
+                <div class="content-wrapper">
+                    <h3 id="" class="article-header article-title answers-article-title text-center">Question prompt anchor tag will scroll here</h3>
+
+                    <h4 class="answers-sub-heading mb0">Answer will go here:</h4>
+                    <p class="">Pie tootsie roll danish lollipop chocolate cake chocolate bar wafer soufflé jujubes. Chocolate sesame snaps jujubes chocolate bar apple pie pudding. Chocolate bar jujubes chupa chups marshmallow fruitcake chupa chups marzipan. Candy cotton candy wafer jujubes brownie gingerbread. Gummies bear claw fruitcake chocolate bar biscuit chocolate cake cupcake macaron. Soufflé sugar plum caramels cheesecake chupa chups bear claw. Shortbread tiramisu cotton candy macaron apple pie tiramisu.</p>
+
+                    <img class="margin-center" src="images/help-page/help-half-screenshot-placeholder.png" alt="Figma Line Accent Placeholder Image">
+
+                </div> <!-- /end .content-wrapper -->
+            </div> <!-- /end .article -->
+        </article> <!-- /end -->
+
+
+
+
+
+
+            </div> <!-- /end .section-header-wrapper -->
+        </section> <!-- /end Answers Section -->
+            
+
+
+
+
+
+
+</div> <!-- /end .wrapper -->
+
+
+<footer>
+    <p class="mb0">Footer Content || More Footer Content</p>
+    <p class="mb0">Footer Date || Footer Copyright</p>
+</footer>
+
+
+
+</body>
+</html>
