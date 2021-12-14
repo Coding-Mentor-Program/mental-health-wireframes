@@ -22,13 +22,7 @@
             i. Images
            ii. Videos
           iii. Other [Embeds, etc.]
-    7. Colors
-            i. Light
-           ii. Medium
-          iii. Dark
-         iiii. Translucent
-================================================================================== 
-8. Section Dividers Copy’n’Paste at file /end
+
 ================================================================================== 
 */ 
 
@@ -63,8 +57,6 @@ h3 {
     margin-bottom: 0;
 }
 
-
-
 img {
     max-width: 100%;
     display: block;
@@ -89,11 +81,22 @@ h1 {
     font-size: 4rem;
 }
 
-.tab-num {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
-  }
+a {
+    text-decoration: none;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+button {
+    cursor: pointer;
+}
+
 
 
 /* 
@@ -109,6 +112,7 @@ section {
 
 .section-wrapper {
     border: 1px dotted blue;
+
 }
 
 article {
@@ -136,9 +140,22 @@ article {
 
 /* ------------ Specific Typography Classes ------------- */
 
+
+.tab-num {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+
 .article-header {
     background: #ababab;
     color: #252525;
+}
+
+.section-wrapper h3,
+.section-wrapper p {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 /* padding for all p in 2 column article section */
@@ -153,11 +170,92 @@ article {
     color: #252525;
 }
 
+/* article header banner  */
+.account-article .col2-article h3 {
+    margin: 0 .5em;
+    padding: .5em;
+    color: #252525;
+}
+
+/* padding for all p in 2 column article section */
+.account-article .col2-article p {
+    padding: 1em;
+}
+
 /* beeNote-- This is also an option for the accent borders in the headers and is easier I just did it this way to make it look the most like the wireframe but is probably a bad idea as it will take longer to load though I've read studies that say it isn't much */
 /* .section-header-wrapper {
     border-top: 3px solid rgb(121, 119, 119);
     border-bottom: 3px solid rgb(121, 119, 119); 
 } */
+
+
+.scroll-box {
+    margin: 0 auto;
+    height: 300px;
+    max-width: 500px;
+    border: 1px solid #252525;
+    overflow:auto;
+}
+
+.scroll-box-content-wrapper {
+    padding: 1em;
+    text-align: center;
+}
+
+.faq-question {
+    border-top: 3px solid #ababab;
+    padding: 1em 0;
+}
+
+/* ---- Form Typography ---- */
+
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li {
+    margin-top: 1em;
+}
+
+form label {
+    display: inline-block;
+    width: 90px; /* setting width for consistency */
+    text-align: right;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.help-form-button {
+    padding-left: 90px; /* same size as the label elements */
+}
+  
+.form-submit-button {
+    margin-left: .4em;
+    padding: .5em .75em;
+}
+
+select {
+    width: 300px;
+    /* text-align: center; */
+}
+
+
+
+
+
+
+
 
 
 
@@ -197,6 +295,10 @@ article {
 .justify-content-center {
     display: flex;
     justify-content: center;
+}
+
+.content-padding {
+    margin: 1em .5em;
 }
 
 .article-padding {
@@ -246,6 +348,8 @@ article {
 
 
 
+
+
 /* 
 =================
 4. Buttons
@@ -253,8 +357,27 @@ article {
 */
 
 /* ----------- Utility Button Classes --------------- */
+
+
+.btn {
+    padding: 15px 45px;
+    background: #ababab;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
 /* ----------- Specific Button Classes -----------  */
 
+.section-faqs .btn {
+   margin: 1em 0;
+}
+
+.section-account .btn {
+    margin: 1em 0;
+ }
 
 
 
@@ -335,142 +458,4 @@ nav a {
 
 /* ----------- Videos -----------  */
 /* ----------- Other [Embeds etc] -----------  */
-
-
-
-
-
-/* 
-=================
-7. Colors
-================= 
-*/
-
-
-/* ----------- Accents -----------  */
-/* ----------- Translucent -----------  */
-/* ----------- Light --------------- */
-/* ----------- Medium -----------  */
-/* ----------- Dark -----------  */
-
-
-
-
-
-
-
-/* 
-=======================
-Section Dividers Copy’n’Paste
-(Or Click’n’Drag :)
-======================= 
-*/
-
-/* ------------ preSub-Dividers / Note / Type ------------ */
-
-/* --  -- */
-/* --  -- */
-/* --  -- */
-/* --  -- */
-/* --  -- */
-/* --  -- */
-
-
-
-/* ------------ Sub-Dividers / Specific Type / Media Queries ------------ */
-
-/* ----  ---- */
-/* ----  ---- */
-/* ----  ---- */
-/* ----  ---- */
-/* ----  ---- */
-/* ----  ---- */
-
-
-
-
-/* ------------ General Section Dividers / Table of Contents Sub-Category ------------ */
-
-/* ------------  ------------ */
-/* ------------  ------------ */
-/* ------------  ------------ */
-/* ------------  ------------ */
-/* ------------  ------------ */
-/* ------------  ------------ */
-/* ------------  ------------ */
-/* ------------  ------------ */
-
-
-
-
-
-/* ------------ Block / Full / New Section Dividers ------------ */
-
-/* 
-=================
-================= 
-*/
-
-/* 
-=================
-================= 
-*/
-
-/* 
-=================
-================= 
-*/
-
-/* 
-=================
-================= 
-*/
-
-
-
-
-/* ------------ BIG Block Dividers ------------ */
-
-/* -- Medium -- */
-
-/* 
-=====================================
-=====================================
-*/
-
-/* 
-=====================================
-=====================================
-*/
-
-/* 
-=====================================
-=====================================
-*/
-
-/* 
-=====================================
-=====================================
-*/
-
-
-
-/* -- Large -- */
-
-/* 
-==================================================================================
-==================================================================================
-*/
-
-/* 
-==================================================================================
-==================================================================================
-*/
-
-/* 
-==================================================================================
-==================================================================================
-*/
-
-
 
