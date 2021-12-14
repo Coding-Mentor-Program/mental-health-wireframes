@@ -1,0 +1,169 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+} /*align navbar*/
+
+.date {
+  text-align: center;
+}
+
+.select-date {
+  text-align: center;
+}
+
+.new-entry-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.new-entry-container section {
+  min-width: 40%;
+  width: 400px;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: lightgray;
+}
+
+input + label {
+  line-height: 2;
+}
+
+input[disabled] {
+  margin-left: 2rem;
+}
+
+table {
+  margin: 1rem auto;
+}
+
+td {
+  padding: 10px;
+}
+
+td label {
+  text-align: right;
+  display: block;
+}
+ 
+input[type="range"] {
+  vertical-align: bottom;
+}
+
+
+/* .emotions-container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.emotions-item {
+  display: flex;
+  align-items: center;
+}
+
+.emotions-item input {
+  margin-left: 1rem;
+  height: 2rem;
+} */
+
+textarea {
+  margin-top: 1rem;
+  padding: 5px;
+  width: 100%;
+  height: 350px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 12px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+  margin-top: 2rem;
+}
+
+/* Diary Overview */
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+main {
+  display: block;
+  min-width: 100%;
+  margin: 0;
+}
+
+.diary-cards-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.diary-lg-placeholder {
+  width: 70%;
+  margin: 0 auto;
+  height: 500px;
+  background: lightgray;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  display: block;
+  margin: 3rem auto;
+  padding: 5px 12px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+.previous-entries {
+  margin-top: 2rem;
+}
+
+.previous-diaries-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2rem;
+}
+
+.diary-sm-placeholder {
+  min-width: 30%;
+  height: 250px;
+  max-width: 100px;
+  background: lightgray;
+  margin-bottom: 3rem;
+}
+
+
+@media (max-width: 1024px) {
+  
+  header .container {
+    justify-content: space-between;
+    margin: 0 auto;
+    
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .container {
+  width: 90%;
+  }
+
+}

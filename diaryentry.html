@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/landing.css">
-    <link rel="stylesheet" href="css/diarycard.css">
+    <link rel="stylesheet" href="css/diarycardpgs.css">
     <title>[HealthApp Name]</title>
 </head>
 <body>
@@ -17,30 +18,31 @@
         <h1>App Name</h1>
         <nav>
             <ul>
-            <li><a href="/loginpg.html">Sign In</a></li>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
+                <li><a href="/landingpg.html">Home</a></li>
+                <li><a href="/profile.html">Profile</a></li>
+                <li><a href="/diaryentry.html">New Diary Entry</a></li>
+                <li><a href="/diaryoverview.html">Diary Cards Overview</a></li>
+                <li><a href="/trendreport.html">Trend Report</a></li>
+                <li><a href="/accountsettings.html">Account Settings</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="/help.html">Help</a></li>
+                <li><a href="/dbtskillsinfo.html">DBT Skills Info</a></li>
+            </ul>
         </nav>
     </div>
     </header>
 
     <main>
-        <div class="container">
-            <section class="hero">
-                <h2>Diary Card</h2>
-            </section>
-            
-            <section class="date">
-                <form action="/diarycard.js">
-                    <label for="dairyDate">Select Date:</label>
-                    <input type="date" id="diaryDate" name="diaryDate">
-                </form>
-            </section>
-
+        <section class="hero">
+            <h2>New Diary Entry</h2>
+        </section>
+        <form action="/diarycard.js" class="select-date">
+            <label for="dairyDate">Select Date:</label>
+            <input type="date" id="diaryDate" name="diaryDate">
+        </form>
+        
+        <div class="new-entry-container">
             <section class="dbtSkills">
                 <h3>DBT SKills</h3>
                 <p>Interpersonal Effectiveness</p>
@@ -65,13 +67,67 @@
                 <input type="radio" id="tried_2" name="dbtskill_1" value="6" disabled>
                 <label for="not_tried_1">When I used the skill it didn't help.</label><br>
                 <input type="radio" id="tried_3" name="dbtskill_1" value="7" disabled>
-                <label for="not_tried_2">When I used the skill it helped.</label><br><br>   
+                <label for="not_tried_2">When I used the skill it helped.</label><br>  
             </section>
 
             <section class="emotions">
                 <h3>Emotions</h3>
-                <p>Sadness</p>
-                <input type="radio" id="not_at_all" name="emotion_1" value="0">
+                <!-- <div class="emotions-container">
+                    <div class="emotions-item">
+                        <label>Sadness</label>
+                        <input type="range" step="10">
+                    </div>
+                    <div class="emotions-item">
+                        <label>Guilt</label>
+                        <input type="range" step="10">
+                    </div>
+                  
+                </div> -->
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="sadness">Sadness</label></td>
+                            <td><input type="range" step="10" id="sadness"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="guilt">Guilt</label></td>
+                            <td><input type="range" step="10" id="guilt"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="shame">Shame</label></td>
+                            <td><input type="range" step="10" id="shame"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="anger">Anger</label></td>
+                            <td><input type="range" step="10" id="anger"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fear">Fear</label></td>
+                            <td><input type="range" step="10" id="fear"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="anxiety">Anxiety</label></td>
+                            <td><input type="range" step="10" id="anxiety"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="joy">Joy</label></td>
+                            <td><input type="range" step="10" id="joy"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+
+
+                <!-- Depression
+                Guilt
+                Shame
+                Anger
+                Fear
+                Anxiety
+                Joy -->
+
+
+                <!-- <input type="radio" id="not_at_all" name="emotion_1" value="0">
                 <label for="emotion_1">Not At all</label><br>
                 <input type="radio" id="bit" name="emotion_1" value="1">
                 <label for="emotion_1">A bit</label><br>
@@ -82,12 +138,12 @@
                 <input type="radio" id="very_strong" name="emotion_1" value="4">
                 <label for="emotion_1">Very Strong</label><br>
                 <input type="radio" id="extremely_strong" name="emotion_1" value="5">
-                <label for="emotion_1"> Extremely Strong (rare)</label><br>
+                <label for="emotion_1"> Extremely Strong (rare)</label><br> -->
             </section>
             
             <section class="urges">
                 <h3>Urges</h3>
-                <p>Select any behaviors you felt and urge this day.</p>
+                <p>Select any behaviors you felt this day.</p>
                 <input type="checkbox" id="urge1" name="urge1" value="suicide_ideation">
                 <label for="urge1"> Suicidal Ideation</label><br>
                 <input type="checkbox" id="urge2" name="urge2" value="self_harm">
@@ -107,15 +163,14 @@
             </section>
 
             <section class="notes">
-                <label for="w3review">Notes about the Day:</label>
+                <label for="w3review"><h3>Notes about the Day:</h3></label>
 
                 <textarea id="notes" name="notes" rows="10" placeholder="Add any Notes here about the day you want to share with your doctor or treatment team."></textarea>
             </section>
-
-            <button type="submit">+</button>
-            <!-- I added this to submit the form. I am thinking that instead of using a div as the container class, we should use a form element? -->
         
         </div>
+        <button type="submit">+</button>
+            <!-- I added this to submit the form. I am thinking that instead of using a div as the container class, we should use a form element? -->
     </main>
     <footer>
         <p>Footer | 202x</p>
