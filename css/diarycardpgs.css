@@ -1,0 +1,147 @@
+ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+} /*align navbar*/
+
+.date {
+  text-align: center;
+}
+
+.select-date {
+  text-align: center;
+}
+
+.new-entry-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  border: red dotted;
+  justify-content: center;
+}
+
+.new-entry-container section {
+  min-width: 40%;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: lightgray;
+}
+
+label {
+  line-height: 2;
+}
+
+input[disabled] {
+  margin-left: 2rem;
+}
+
+/* header .container {
+  min-width: 100%;
+  padding: 2rem;
+  justify-content: space-between;
+} */
+
+
+label[for="w3review"] {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+textarea {
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 12px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+  margin-top: 2rem;
+}
+
+/* Diary Overview */
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+main {
+  display: block;
+  min-width: 100%;
+  margin: 0;
+}
+
+.diary-cards-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.diary-lg-placeholder {
+  width: 70%;
+  margin: 0 auto;
+  height: 500px;
+  background: lightgray;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 12px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1;
+  margin-top: 2rem;
+}
+
+.previous-entries {
+  margin-top: 2rem;
+}
+
+.previous-diaries-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin: 1rem auto;
+  width: 80%;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 2rem;
+}
+
+.diary-sm-placeholder {
+  min-width: 30%;
+  height: 250px;
+  max-width: 100px;
+  background: lightgray;
+  margin-bottom: 3rem;
+}
+
+
+@media (max-width: 1024px) {
+  
+  header .container {
+    justify-content: space-between;
+    margin: 0 auto;
+    
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .container {
+  width: 90%;
+  }
+
+}

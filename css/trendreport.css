@@ -4,55 +4,29 @@
   box-sizing: border-box;
 }
 
+ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+} /*align navbar*/
+
 /*--------------------------
           HEADER
 --------------------------*/
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header .container {
+  min-width: 100%;
   padding: 2rem;
-  position: relative;
-  margin-bottom: 8rem;
-}
-
-.logo-placeholder {
-  width: 100px;
-  height: 100px;
-  background: gainsboro;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-}
-
-h1 {
-  font-size: 4vw;
-}
-
-.fa-bars {
-  font-size: 2rem;
-  padding: 34px;
-  color: gray;
-}
-
-nav {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.header-container ul {
-  list-style: none;
-  text-align: center;
-  line-height: 2;
-  border: solid gray;
-  padding: 1rem 2rem;
+  justify-content: space-between;
 }
 
 /*--------------------------
         TREND REPORT
 --------------------------*/
+
+main {
+  display: block;
+}
 
 .trend-report h2 {
   font-size: 2.5vw;
