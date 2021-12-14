@@ -44,8 +44,36 @@
         
         <div class="new-entry-container">
             <section class="dbtSkills">
-                <h3>DBT SKills</h3>
-                <p>Interpersonal Effectiveness</p>
+                <h3>DBT Skills</h3>
+                <select name="skill" id="skill">
+                    <option selected>Select skill...</option>
+                    <optgroup label="INTRAPERSONAL EFFECTIVENESS:">
+                        <option value="prioritize">Prioritize Goals</option>
+                        <option value="saying-no">Saying "No" & Observing limits</option>
+                        <option value="dear-man">DEAR MAN</option>
+                        <option value="fast">FAST</option>
+                        <option value="give">GIVE</option>
+                    </optgroup>
+                    <optgroup label="EMOTION REGULATION:">
+                        <option value="please">PLEASE Mastery</option>
+                        <option value="take-care">Take Care...</option>
+                        <option value="abc">ABCs</option>
+                        <option value="mindfulness">Mindfulness of Current Emotion</option>
+                        <option value="chec">Check the Facts</option>
+                        <option value="opposite">Opposite Action</option>
+                        <option value="problem-solving">Problem-solving</option>
+                    </optgroup>
+                    <optgroup label="DISTRESS TOLERANCE:">
+                        <option value="wise-mind">Wise Mind ACCEPTS</option>
+                        <option value="improve">IMPROVE the Moment</option>
+                        <option value="pros-cons">Pros & Cons</option>
+                        <option value="stop">STOP</option>
+                        <option value="tip">TIP</option>
+                        <option value="smile-hands">Half-smile & Willing Hands</option>
+                        <option value="acceptance">Radical Acceptance</option>
+                    </option>
+                        <!-- We may want to add sub-options to show all the options below these? -->
+                </select><br>
                 <input type="radio" id="notThought" name="dbtskill_1" value="0">
                 <label for="notThought">Not thought about or used on this day</label><br>
                 <input type="radio" id="thought" name="dbtskill_1" value="thought">
@@ -72,62 +100,39 @@
 
             <section class="emotions">
                 <h3>Emotions</h3>
-                <!-- <div class="emotions-container">
-                    <div class="emotions-item">
-                        <label>Sadness</label>
-                        <input type="range" step="10">
-                    </div>
-                    <div class="emotions-item">
-                        <label>Guilt</label>
-                        <input type="range" step="10">
-                    </div>
-                  
-                </div> -->
                 <table>
                     <tbody>
                         <tr>
                             <td><label for="sadness">Sadness</label></td>
-                            <td><input type="range" step="10" id="sadness"></td>
+                            <td><input type="range" step="10" value="0" id="sadness"></td>
                         </tr>
                         <tr>
                             <td><label for="guilt">Guilt</label></td>
-                            <td><input type="range" step="10" id="guilt"></td>
+                            <td><input type="range" step="10" value="0" id="guilt"></td>
                         </tr>
                         <tr>
                             <td><label for="shame">Shame</label></td>
-                            <td><input type="range" step="10" id="shame"></td>
+                            <td><input type="range" step="10" value="0" id="shame"></td>
                         </tr>
                         <tr>
                             <td><label for="anger">Anger</label></td>
-                            <td><input type="range" step="10" id="anger"></td>
+                            <td><input type="range" step="10" value="0" id="anger"></td>
                         </tr>
                         <tr>
                             <td><label for="fear">Fear</label></td>
-                            <td><input type="range" step="10" id="fear"></td>
+                            <td><input type="range" step="10" value="0" id="fear"></td>
                         </tr>
                         <tr>
                             <td><label for="anxiety">Anxiety</label></td>
-                            <td><input type="range" step="10" id="anxiety"></td>
+                            <td><input type="range" step="10" value="0" id="anxiety"></td>
                         </tr>
                         <tr>
                             <td><label for="joy">Joy</label></td>
-                            <td><input type="range" step="10" id="joy"></td>
+                            <td><input type="range" step="10" value="0" id="fear"></td>
                         </tr>
                     </tbody>
                 </table>
-                
-
-
-                <!-- Depression
-                Guilt
-                Shame
-                Anger
-                Fear
-                Anxiety
-                Joy -->
-
-
-                <!-- <input type="radio" id="not_at_all" name="emotion_1" value="0">
+                <!-- Jami's original markup: <input type="radio" id="not_at_all" name="emotion_1" value="0">
                 <label for="emotion_1">Not At all</label><br>
                 <input type="radio" id="bit" name="emotion_1" value="1">
                 <label for="emotion_1">A bit</label><br>
