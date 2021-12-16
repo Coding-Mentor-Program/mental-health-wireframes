@@ -36,58 +36,72 @@
 
   <main>
     <h2>Account Settings</h2>
-    <div class="settings-container">
-      <div class="settings-sections">
+    <section class="settings-container">
+      <section class="settings-sections">
         <form action=""> 
           <label for="search-bar">Search:</label>
           <input type="search" name="search" id="search">
         </form>
         <div class="settings-section">
-          <a href="" id="profile">Profile</a>
+          <a href="" class="profile">Profile</a>
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="settings-section">
-          <a href="" id="settings">Settings</a>
+          <a href="" class="settings">Settings</a>
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="settings-section">
-          <a href="" id="connect-doctor">Connect Doctor</a>
+          <a href="" class="connect-doctor">Connect Doctor</a>
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="settings-section">
-          <a href="" id="notifications">Notifications</a>
+          <a href="" class="notifications">Notifications</a>
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="settings-section">
-          <a href="" id="dbt-skills">DBT Skills</a>
+          <a href="" class="dbt-skills">DBT Skills</a>
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="settings-section">
-          <a href="" id="emotions">Emotions</a>
+          <a href="" class="emotions">Emotions</a>
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="settings-section">
-          <a href="" id="urges">Urges</a>
+          <a href="" class="urges">Urges</a>
           <i class="fas fa-chevron-right"></i>
         </div>
         <div class="settings-section">
-          <a href="" id="diary-notes">Diary Notes</a>
+          <a href="" class="diary-notes">Diary Notes</a>
           <i class="fas fa-chevron-right"></i>
         </div>
-      </div>
-      <div class="settings-info">
+      </section>
+      <section class="settings-info">
         <h3>Profile</h3>
         <form action="" id="profile">
-          <div class="user-name-info">
-            <label for="user-name">User Name:</label>
-            <input type="text" id="user-name">
+          <div class="profile-container">
+            <div class="name-container">
+              <div>
+                <label for="user-name">User Name:</label>
+                <input type="text" id="user-name">
+              </div>
+              <div class="full-name-container">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name">
+              </div>
+              
+            </div>
+            <div class="profile-img-container">
+              <div class="profile-img"><!--Profile Image Here--></div>
+              <a href="" class="change-photo">Change Photo</a>
+            </div>
           </div>
-          <div class="full-name">
-            
-          </div>
+          <button type="submit">Submit</button>
         </form>
-      </div>
-    </div>
+        
+      </section>
+    </section>
 
   </main>
 
