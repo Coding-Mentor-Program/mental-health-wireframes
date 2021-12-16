@@ -40,6 +40,7 @@ input {
 .settings-container {
   display: flex;
   border-top: lightgray 1px solid;
+  min-height: 800px;
 }
 
 .settings-sections {
@@ -95,7 +96,7 @@ input[type="search"] {
 
 .name-container {
   width: 100%;
-  padding-right: 4vw;
+  /* padding-right: 4vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +133,7 @@ button[type="submit"] {
 }
 
 .change-photo {
-  margin-top: 2rem;
+  margin: 2rem 0;
   border: 2px solid gray;
   padding: 5px 1rem;
 }
@@ -144,4 +145,38 @@ button[type="submit"] {
     margin: 0 auto;
     
   }
+}
+
+@media (max-width: 768px) {
+
+  .profile-container {
+    flex-direction: column-reverse;
+  }
+
+  .profile-img {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .name-container input {
+    width: 50vw;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  input {
+    width: 80vw;
+  }
+
+  label {
+    margin-top: 1rem;
+  }
+
+  .settings-info {
+    display: none;
+  }
+  /*We would use JS to change display to block when the user clicks on an option...but then somehow it would appear under the name of the section (in this example, under the Profile title. I'm just not exactly sure yet how to do this.*/
+
 }
